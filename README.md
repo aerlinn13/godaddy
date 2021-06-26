@@ -1,44 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This project is a technical exercise for GoDaddy.
 
-## Available Scripts
+# Solution
 
-In the project directory, you can run:
+The boilerplate used is redux-toolkit plus Typescript with addition of styled components and Cypress for automated testing. As there is no interaction in the app apart from navigating from list of repositories to a single repository view, I've decided to add only automated tests with Cypress. Unit tests would have been useful if there was any kind of data manipulation in reducers which we don't have at this stage. I've also decided to use redux-toolkit even though application is very simple, because every demo or POC should be created with potential to quick scaleup. Redux-toolkit reduces a lot of clutter of previous incarnations of Redux and allows to spin up features of any complexity.
 
-### `yarn start`
+# Screenshots
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**List of repos**
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<img width="1434" alt="Screen Shot 2021-06-26 at 21 38 18" src="https://user-images.githubusercontent.com/25592564/123525361-f019f100-d6c7-11eb-80fb-83ecd5e78482.png">
 
-### `yarn test`
+**Single Repo View**
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1426" alt="Screen Shot 2021-06-26 at 21 38 26" src="https://user-images.githubusercontent.com/25592564/123525365-fe680d00-d6c7-11eb-9abd-c77379e07810.png">
 
-### `yarn build`
+# Runnning demo
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run `yarn start` from project directory.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Running automated tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run `yarn test` from project directory. Ensure that you have demo running in another tab.
